@@ -2,10 +2,12 @@ import React from "react";
 import {Players} from "../../imports/api/players"
 
 export default class Player extends React.Component{
+    
     render(){
-       return( 
+        let rank =`item item--position-${this.props.player.rank}` ;
+       return(
      <div key={this.props._id} name="playername"
-      className="item">
+    className={rank}>
     <div className="player">
     
     <div >
@@ -14,7 +16,9 @@ export default class Player extends React.Component{
         {this.props.player.name} 
        </h3> 
         <p className="player__stats">
-        {this.props.player.score} pöang. 
+        {this.props.player.rank} place - {this.props.player.position}
+        :  {this.props.player.score} pöang. 
+        
         </p>
     </div>
        

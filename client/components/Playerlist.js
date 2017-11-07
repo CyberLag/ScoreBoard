@@ -31,7 +31,7 @@ import FlipMove from "react-flip-move";
           return(
               <div >
               <div >
-              <FlipMove>
+              <FlipMove maintainContainerHeight={true}>
               {this.renderPlayers()}
               </FlipMove>
               </div>
