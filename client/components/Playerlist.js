@@ -1,6 +1,7 @@
 import React from "react";
 import {Players} from "../../imports/api/players";
 import Player from "./player";
+import FlipMove from "react-flip-move";
 
 
 
@@ -30,7 +31,9 @@ import Player from "./player";
           return(
               <div >
               <div >
+              <FlipMove>
               {this.renderPlayers()}
+              </FlipMove>
               </div>
               </div>
           )
